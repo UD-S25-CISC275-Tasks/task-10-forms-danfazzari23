@@ -8,18 +8,16 @@ export function EditMode(): React.JSX.Element {
     return (
         <div>
             <h3>Edit Mode</h3>
-            <div className="form-switch">
-                <label>
-                    Edit Mode:
-                    <input
-                        type="checkbox"
-                        checked={editMode}
-                        onChange={(e) => {
-                            setEditMode(e.target.checked);
-                        }}
-                    />
-                </label>
-            </div>
+            <label className="form-switch">
+                Edit Mode:
+                <input
+                    type="checkbox"
+                    checked={editMode}
+                    onChange={(e) => {
+                        setEditMode(e.target.checked);
+                    }}
+                />
+            </label>
             {editMode ?
                 <div>
                     <div>
